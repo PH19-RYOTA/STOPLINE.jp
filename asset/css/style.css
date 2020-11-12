@@ -11,8 +11,9 @@ body
 }
 #header
 {
- background-color: azure;
+ background-color: black;
  text-align: center;
+ color:white;
 }
 
 #store1
@@ -23,7 +24,7 @@ body
 
 #store_txt1
 {
- background-color: black;
+ background: linear-gradient(100deg,white,Black);
  color: white;
  text-align: center;
 }
@@ -41,7 +42,7 @@ body
 
 #store_txt2
 {
- background-color: black;
+   background: linear-gradient(100deg,black,white);
  color: white;
  text-align: center;
 }
@@ -62,6 +63,13 @@ body
  background-color: black;
  color: white;
  text-align: center;
+}
+
+#MovieText
+{
+   background: linear-gradient(90deg,white,black);
+   text-align: center;
+   color: 
 }
 
 footer
