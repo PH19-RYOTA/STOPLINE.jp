@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <!--CSS紐づけ-->
+ <link rel="stylesheet" href="asset/css/style.css">
+ <!--Webアイコン指定-->
+ <link rel="icon" href="asset/img/web_icon.png">
+ <!--スマホサイズ-->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--Webタイトル-->
+ <title>STOPLINE</title>
+</head>
+<body>
+  <!--ヘッダー記載-->
+  <header>
+   <div class="container">
+      <div id="header">
+        <h1>STOPLINE</h1>
+        <h2>山本涼太 自信作</h2>
+      </div>
+    </div>
+  </header>
+
+    <!--メイン内容記載-->
+    <main>
+      <div class="store">
+        <!--Google Play-->
+        <div id="store1">
+          <h2 id="store_txt1">Google Play</h2>
+          <img id="store_img1" src="asset/img/google-play-logo-scaled.jpg" style="border-color: black; border-style: dashed;" width="412" height="200">
+        </div>
+        <!--Steam-->
+        <div id="store3">
+          <h2 id="store_txt3">Steam</h2>
+          <img id="store_img3" src="asset/img/store_home_share.jpg" style="border-color: black; border-style: dashed;" width="412" height="200" >
+        </div>
+        <!--App Store-->
+        <div id="store2">
+          <h2 id="store_txt2">App Store</h2>
+          <img id="store_img" src="asset/img/appstore-icon.png" style="border-color: black; border-style: dashed;" width="412" height="200">
+        </div>
+      </div>
+    </main>
+
+    <!--フッター記載-->
+    <footer>
+      <div class="container">
+        <!--フッター-->
+        <div id="fotter">
+          <div class="contact">
+            <!--お問い合わせフォーム-->
+            <div id="form">
+              <h1>STOPLINE公式 <br> お問い合わせフォーム</h1>
+            </div>
+            <div>
+              <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
+                <p>お問い合わせ内容をご入力の上、「確認画面へ」ボタンをクリックしてください。</p>
+              <div>
+                <div>
+                  <label>お名前<span>必須</span></label>
+                  <input type="text" name="name" placeholder="例）山田太郎" value="">
+                </div>
+                <div>
+                  <label>ふりがな<span>必須</span></label>
+                  <input type="text" name="furigana" placeholder="例）やまだたろう" value="">
+                </div>
+                <div>
+                  <label>メールアドレス<span>必須</span></label>
+                  <input type="text" name="email" placeholder="例）guest@gmail.com" value="">
+                </div>
+                <div>
+                  <label>電話番号<span>必須</span></label>
+                  <input type="text" name="tel" placeholder="例）000-0000-0000" value="">
+                </div>
+                <div>
+                  <label>性別<span>必須</span></label>
+                  <input type="radio" name="sex" value="男性" checked>男性
+                  <input type="radio" name="sex" value="女性">女性
+                </div>
+                <div>
+                  <label>お問い合わせ項目<span>必須</span></label>
+                  <select name="item">
+                    <option value="">お問い合わせ項目を選択してください</option>
+                    <option value="バグ報告">バグ報告</option>
+                    <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+                    <option value="ご意見・ご感想">ご意見・ご感想</option>
+                  </select>
+                  <div>
+                    <label>お問い合わせ内容<span>必須</span></label>
+                    <textarea name="contact" rows="5" placeholder="お問い合わせ内容を入力"></textarea>
+                  </div>
+                </div>
+                <button type="submit">確認画面へ</button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>
