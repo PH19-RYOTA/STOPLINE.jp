@@ -19,7 +19,6 @@ body
 #store1
 {
  font-size: 1.0em;
- /*float: left;*/
 }
 
 #store_txt1
@@ -64,20 +63,45 @@ body
  color: white;
  text-align: center;
 }
-
+.Movie{
+   text-align: center;
+}
 #MovieText
 {
-   background: linear-gradient(90deg,white,black);
+   background: linear-gradient(90deg,white,black,white);
    text-align: center;
-   color: 
+   color: white;
+}
+
+.GamePlay
+{
+   text-align: center;
+}
+
+#PlayText
+{
+   background: linear-gradient(100deg,white,black,white);
+   text-align: center;
+   color: white;
+}
+#PlayText a{color: white;}
+
+#WebPlay
+{
+   text-align: center;
 }
 
 footer
 {
  width: 100%;
- background-color: floralwhite;
+ background-color: white;
  color: black;
  text-align: center;
- padding: 50px 0;
- overflow: hidden;
+
+}
+
+#form
+{
+   background: linear-gradient(100deg,white,black,white);
+   color: white;
 }
